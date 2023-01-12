@@ -1,0 +1,13 @@
+
+div{
+  margin: auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+tr,th,td{
+  border: 2px solid;
+}
+
+
+
