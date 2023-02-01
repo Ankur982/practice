@@ -21,7 +21,7 @@ const App = () => {
   },[])
 
 
-  console.log(arr)
+
   return (
     <>
     <div>
