@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<title>Have.it | Login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/login.css">
+		<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<section class="loginbg">
+			<div class="login-logo">
+				<img src="images/logo.png">
+			</div>
+			<div class="login-box">
+				<div class="login-logo">
+					<img src="images/logo.png">
+				</div>
+				<div class="email-login-box">
+					<div class="mb-4">
+						<h4 class="text-white"><b>Log In</b></h4>
+					</div>
+					<div class="input-cover mb-3">
+						<input type="text" class="form-control" placeholder="Enter phone no.*">
+					</div>
+					<div class="input-cover mb-3">
+						<input type="password" class="form-control" placeholder="Enter password*" id="myInput">
+						<i class="fa fa-eye" aria-hidden="true" onclick="myFunction()"></i>
+					</div>
+					<div class="login-footer mt-3 clearfix">
+						<a href="forgot-password.html" class="text-danger float-end"><small>Forgot Password?</small></a>
+					</div>
+					<div class="text-center mt-4">
+						<a href="#" class="login-btn" data-bs-toggle="modal" data-bs-target="#otp_modal">Login</a>
+					</div>
+					<div class="login-footer mt-5">
+						<p class="text-white">Don't have account?
+							<a href="signup.html" class="text-gold">Create account</a>
+						</p>
+					</div>
+					<!-- <div class="text-center text-white">or</div>
+					<div class="text-center my-4">
+							<a href="#" class="login-btn" id="mobile-login">Sign In with Mobile</a>
+					</div> -->
+				</div>
+				<!-- <div class="mt-3 mobile-login-box">
+						<h4 class="text-white"><b>Sign in with mobile number</b></h4>
+						<p class="text-white">Please type your mobile number</p>
+											<div class="input-cover mb-3">
+								<input type="text" class="form-control" placeholder="Phone no.*">
+						</div>
+						<div class="text-center my-4">
+								<a href="#" class="login-btn" data-bs-toggle="modal" data-bs-target="#otp_modal">Send OTP</a>
+						</div>
+				</div> -->
+			</div>
+		</section>
+		<!-- The Modal -->
+		<div class="modal" id="otp_modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title"><b>OTP Verification</b></h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body">
+						<label>We have sent an OTP on phone number<span class="text-gold"> 987654****</span></label>
+						<div class="input-cover my-3">
+							<input type="text" class="form-control text-dark" placeholder="Enter 4 digit OTP here">
+						</div>
+						<div class="text-center my-4">
+							<a href="#" class="login-btn">Verify OTP</a>
+						</div>
+						<p class="text-center">Didn't receive the OTP? <a href="#" class="text-gold">Resend OTP</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/login.js"></script>
+		<script>
+		</script>
+	</body>
+</html>

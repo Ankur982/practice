@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.loginbg{
+	width: 100%;
+	height: 100vh;
+	background-image: url('../images/loginbg3.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	background-color: #262729;
+}
+.loginbg::before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgb(0 0 0 / 50%);
+}
+.login-box{
+	position: absolute;
+	height: auto;
+	margin: 0 auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: url('../images/bg.svg');
+	/* -webkit-border-radius: 5px; */
+	/* border-radius: 5px; */
+	/* -webkit-box-shadow: 0px 2px 10px #00000052; */
+	/* box-shadow: 0px 2px 10px #00000052; */
+	max-width: 100%;
+	width: 450px;
+	padding: 25px 25px 0px 25px;
+	/* border: 1px solid #ffe3af; */
+	background-size: cover;
+	height: 560px;
+	max-height: initial;
+}
+.email-login-box{
+	margin-top: 120px;
+}
+.signup-box{
+	margin-top: 40px;
+}
+.forgot-box{
+	margin-top: 120px;
+}
+.login-logo{
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	position: absolute;
+	top: -90px;
+	left: 0;
+}
+.login-logo img{
+	max-width: 200px;
+}
+.input-cover{
+	position: relative;
+}
+.input-cover i{
+  position: absolute;
+  bottom: 15px;
+  right: 12px;
+  color: #929191;
+  cursor: pointer;
+}
+.input-cover i:hover{
+	color: #4e7650;
+}
+.input-cover label{
+	display: block;
+	color: #000;
+	font-size: 14px;
+}
+.input-cover .form-control:focus{
+	box-shadow: none;
+	background: transparent;
+}
+.input-cover .form-control{
+	height: calc(1.5em + 1.25rem + 2px);
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #4e7650;
+	border-radius: 0rem;
+	padding-left: 5px;
+	color: #fff;
+}
+.input-cover input::placeholder{
+	color: #9e9e9e;
+	font-size: 14px;
+	font-weight: 300;
+}
+.input-cover input:focus{
+	outline: none;
+	border-color: #4e7650;
+	border-width: 2px;
+}
+.form-check-label{
+	font-size: 14px;
+	color: #000;
+}
+.form-check-input {    
+  margin-top: .2rem;    
+}
+.login-btn{
+	color: #ffffff;
+	font-weight: 600;
+	background-color: #4e7650;
+	padding: 10px 20px;
+	border-radius: 15px;
+	text-decoration: none;
+	display: inline-block;
+	border: 2px solid transparent;
+	width: 200px;
+}
+.login-btn:hover{
+	background-color: #fff;
+	color: #4e7650;
+	text-decoration: none;
+	border-color: #4e7650;
+}
+.login-footer{
+	text-align: center;
+	margin: 5px 0px 0px;
+}
+.login-footer p{
+	font-size: 14px;	
+}
+.text-gold{
+	color: #4e7650 !important;
+}
+@media screen and (max-width: 575px){
+	.login-box{
+		/*background: transparent;
+		box-shadow: none;*/
+	}
+	.login-logo{
+		top: 0;
+	}
+}
+
+@media screen and (max-width: 360px){
+	.login-box{
+		background-image: url(../images/phone-bg.png)!important;
+		height: 455px;
+		top: 58%;
+	}
+		.email-login-box {
+    margin-top: 75px;
+}
+.forgot-box{
+	margin-top: 90px;
+}
+	.mt-5{
+		margin-top: 2rem!important;
+	}
+	.login-box .login-logo{
+		display: none;
+	}
+	.loginbg .login-logo{
+		margin-top: 50px;
+	}
+	.email-login-box .mt-5{
+		margin-top: 1.5rem!important;
+	}
+	.email-login-box .mb-4{
+		margin-bottom: 0.8rem!important;
+	}
+	.text-white{
+		font-size: 14px;
+	}
+
+}
+
+@media screen and (min-width: 362px){
+	.loginbg .login-logo{
+		display: none;
+	}
+
+}
